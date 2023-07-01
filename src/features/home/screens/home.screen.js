@@ -1,6 +1,8 @@
 import { View, Text, SafeAreaView, Image } from "react-native";
 import React from "react";
 
+import { GoogleAutoCompleteInput } from "../components/google-auto-complete.component";
+
 import { NavOptions } from "../../../components/nav-options.component";
 
 export const HomeScreen = () => {
@@ -15,9 +17,9 @@ export const HomeScreen = () => {
           }}
           source={{ uri: "https://links.papareact.com/gzs" }}
         />
-
         <NavOptions />
       </View>
+      <GoogleAutoCompleteInput />
     </SafeAreaView>
   );
 };
